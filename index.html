@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta http-equiv = "X-UA-Compatible" content="ie = edge">
+    <title>Tip Calculator</title>
+
+    <!-- Normalize.css -->
+    <link rel = "stylesheet" type = "text/css" href = "normalize.css">
+
+    <!-- Custom Css -->
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body id = "calculator-body">
+    <div id = "container">
+        <h1>Tip Calculator</h1>
+        <div id = "calculator">
+            <form>
+                <label>How much was your Bill?
+                    <br>$<input type = "text" id = "billAmount">
+                </label>
+                <label>How was your service?
+                <select id = "service-quality">
+                    <option disabled selected value = "0">-- Choose an Option --</option>
+                    <option value = "0.2">20% - Outstanding</option>
+                    <option value = "0.15">15% - Very Good</option>
+                    <option value = "0.1">10% - Good</option>
+                    <option value = "0.05">5% &nbsp;&nbsp;- Average</option>
+                    <option value = "0.02">2%&nbsp;&nbsp;&nbsp;- Bad</option>
+                </select>
+                </label>
+                <label>How many people are sharing the Bill?
+                <input type = "text" id = "totalPeople"> People
+                </label>
+                <button type = "button" id = "calculate">Calculate</button>
+            </form>
+        </div> <!-- END OF <div id = "calculator"> -->
+        <div id = "total-tip">
+            <sup id = "dollar-sign">$</sup><span id = "tip">0.00</span><span id = "cent">¢</span> 
+            <small id = "each">each</small>
+        </div><!-- END OF <div id = "total-tip"> -->
+    </div> <!-- END OF <div id = "container"> -->
+    
+    <footer id = "footer"> copyrights &copy; 2017-2018 all the rights are reserved to this website</footer>
+    <!-- Javascript -->
+    <script type = "text/javascript" src = "jquery-3.2.1.js"></script>
+    <script type = "text/javascript" src = "script.js"></script>
+</body>
+</html>
